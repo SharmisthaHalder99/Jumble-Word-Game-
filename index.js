@@ -73,6 +73,12 @@ const checking=()=>{
             body.classList.toggle("correct-animation")
             
         }, 5000);
+        setTimeout(() => {
+            readTextFile("assets/sgb-words.txt")
+            input_string.value = ""
+            
+        }, 5000);
+
 
     }
     else{
@@ -84,7 +90,7 @@ const checking=()=>{
         }, 500);
 
     }
-    readTextFile("assets/sgb-words.txt")
+    
 }
 result_string.addEventListener("click",checking)
 
