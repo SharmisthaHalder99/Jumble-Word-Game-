@@ -73,6 +73,7 @@ const checking=()=>{
             body.classList.toggle("correct-animation")
             
         }, 5000);
+
     }
     else{
         console.log("false");
@@ -83,6 +84,7 @@ const checking=()=>{
         }, 500);
 
     }
+    readTextFile("assets/sgb-words.txt")
 }
 result_string.addEventListener("click",checking)
 
